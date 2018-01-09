@@ -4,25 +4,26 @@ import java.util.Scanner;
 
 public class Exercitiu_9 {
     public static void main(String[] args){
-        String number;
+        String number ;
         Scanner no1 = new Scanner ( System.in );
-        System.out.println ("What is the first number?");
-        int firstNo =  no1.nextInt ();
+        System.out.println ( "What is the first number?" );
+        int firstNo = no1.nextInt ();
         Scanner no2 = new Scanner ( System.in );
-        System.out.println ("What is the second number??");
+        System.out.println ( "What is the second number??" );
         int secondNo = no2.nextInt ();
-        if (firstNo < secondNo){
-            while (firstNo <= secondNo){
-                 number = String.valueOf ( firstNo ) + "; ";
-                 firstNo += 1;
-                 System.out.println (number);
+        if (firstNo < secondNo && firstNo != secondNo) {
+            while (firstNo <= secondNo) {
+                number = String.valueOf ( firstNo ) + "; ";
+                firstNo += 1;
+                System.out.println ( number );
             }
         } else {
-            while (firstNo >= secondNo){
-                number = String.valueOf ( secondNo ) + "; ";
-                secondNo -= 1;
-                System.out.println (number);
+            while (firstNo >= secondNo) {
+                number = String.valueOf ( firstNo ) + "; ";
+                firstNo -= 1;
+                System.out.println ( number );
             }
+
         }
     }
 }
