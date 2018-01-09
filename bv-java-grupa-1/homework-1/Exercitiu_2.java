@@ -13,7 +13,7 @@ public class Exercitiu_2 {
             System.out.println ("Enter a number:");
             numbers[i]=scanner.nextInt();
             if (min < numbers[i])
-               min = numbers[i];
+                min = numbers[i];
         }
 
         System.out.println (min);
